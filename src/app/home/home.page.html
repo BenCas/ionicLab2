@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Register Student
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!--- studentID, First, Last, email-->
+<ion-item>
+<ion-input inputmode="numeric" [(ngModel)] ="studentModel.Id" placeholder="StudentID"></ion-input>
+</ion-item>
+
+<ion-item>
+<ion-input [(ngModel)] ="studentModel.FirstName" placeholder="First Name"></ion-input>
+</ion-item>
+
+<ion-item>
+<ion-input [(ngModel)] ="studentModel.LastName" placeholder="Last Name"></ion-input>
+</ion-item>
+
+<ion-item>
+<ion-input [(ngModel)] ="studentModel.Email" inputmode="email" placeholder="Email"></ion-input>
+</ion-item>
+
+<ion-button (click)="registerStudent()" color="primary" expand="block">Register</ion-button>
+
+
+</ion-content>

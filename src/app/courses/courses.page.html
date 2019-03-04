@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+    <ion-title>Courses</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--- studentID, First, Last, email-->
+<ion-item>
+<ion-input inputmode="numeric" [(ngModel)] ="courseModel.ID" placeholder="Course ID"></ion-input>
+</ion-item>
+
+<ion-item>
+<ion-input [(ngModel)] ="courseModel.Title" placeholder="Course Title"></ion-input>
+</ion-item>
+
+<ion-item>
+<ion-input [(ngModel)] ="courseModel.Subject" placeholder="Course Subject"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-input inputmode="numeric" [(ngModel)] ="courseModel.Units" placeholder="CourseUnits"></ion-input>
+</ion-item>
+
+<ion-button (click)="registerCourse()" color="primary" expand="block">Register</ion-button>
+
+</ion-content>
+
+
